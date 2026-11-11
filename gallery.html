@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="gallery-header">
+    <h1>Photo Gallery</h1>
+    <!-- Filter Buttons (Flexbox Container) -->
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="landscape">Landscapes</button>
+      <button class="filter-btn" data-filter="portrait">Portraits</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+    </div>
+  </header>
+
+  <!-- Gallery Grid Container -->
+  <main class="gallery-grid">
+    
+    <!-- 12 Image Cards -->
+    <div class="card" data-category="landscape">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1018/600/400" alt="Mountain Lake">
+        <div class="card-header">
+          <span class="category-tag">Landscapes</span>
+          <h3 class="card-title">Serene Mountain Lake</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">A tranquil view of mountains reflecting on a crystal-clear lake during early dawn.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/64/600/400" alt="Girl in Thought">
+        <div class="card-header">
+          <span class="category-tag">Portraits</span>
+          <h3 class="card-title">Contemplative Mood</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">A dramatic natural light portrait showcasing emotion and detailed expression.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1040/600/400" alt="Modern Building">
+        <div class="card-header">
+          <span class="category-tag">Architecture</span>
+          <h3 class="card-title">Glass & Steel</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">Symmetrical geometric lines of a modern skyscraper silhouette.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="landscape">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1015/600/400" alt="River Valley">
+        <div class="card-header">
+          <span class="category-tag">Landscapes</span>
+          <h3 class="card-title">Green Valley Trail</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">A winding river carving its path through vibrant green mountain ridges.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/338/600/400" alt="Elderly Smile">
+        <div class="card-header">
+          <span class="category-tag">Portraits</span>
+          <h3 class="card-title">Wisdom & Years</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">A candid close-up capture depicting character and warm storytelling.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1029/600/400" alt="Historical Bridge">
+        <div class="card-header">
+          <span class="category-tag">Architecture</span>
+          <h3 class="card-title">Classic Arch Bridge</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">Timeless stone craftsmanship stretching across a misty morning river.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="landscape">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1043/600/400" alt="Coastal Sunset">
+        <div class="card-header">
+          <span class="category-tag">Landscapes</span>
+          <h3 class="card-title">Golden Horizon</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">Warm golden rays washing over rocky ocean tides at dusk.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1027/600/400" alt="Studio Shadow Portrait">
+        <div class="card-header">
+          <span class="category-tag">Portraits</span>
+          <h3 class="card-title">Shadow & Light</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">High-contrast monochrome lighting creating artistic depth and shape.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1076/600/400" alt="Spiral Staircase">
+        <div class="card-header">
+          <span class="category-tag">Architecture</span>
+          <h3 class="card-title">Infinite Helix</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">A bird's-eye perspective of a breathtaking interior spiral staircase design.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="landscape">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1039/600/400" alt="Waterfall Canopy">
+        <div class="card-header">
+          <span class="category-tag">Landscapes</span>
+          <h3 class="card-title">Forest Cascade</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">A rushing forest waterfall hidden beneath dense woodland canopy.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="portrait">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/342/600/400" alt="Street Portrait">
+        <div class="card-header">
+          <span class="category-tag">Portraits</span>
+          <h3 class="card-title">Urban Wanderer</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">A vibrant street photography shot catching life in the bustling city.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" data-category="architecture">
+      <div class="card-inner">
+        <img src="https://picsum.photos/id/1067/600/400" alt="Urban Skyline">
+        <div class="card-header">
+          <span class="category-tag">Architecture</span>
+          <h3 class="card-title">Metropolis Twilight</h3>
+        </div>
+        <div class="overlay">
+          <p class="overlay-desc">Illuminated city structures glittering under a deep blue twilight sky.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    // Filter Functionality Script
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          const category = card.getAttribute('data-category');
+          if (filterValue === 'all' || filterValue === category) {
+            card.classList.remove('hide');
+          } else {
+            card.classList.add('hide');
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
